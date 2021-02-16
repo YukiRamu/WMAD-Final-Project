@@ -1,0 +1,47 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+@mixin flexbox($justify, $direction){
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+/* grid */
+@mixin  grid () {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:2em;
+  width: 100%;
+}
+
+/* logo */
+@mixin logo () {
+  position: relative;  
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); 
+  box-shadow: 0.7em 1em 1em $textColor3; 
+}
+
+/* colors */
+$primary:rgb(255, 172, 47);
+$secondary:#b4dbbf;
+$third:#EAE3EA;
+$fourth:#e2e5e2;
+$fifth: #b46262;
+$sixth: #86ABA1;
+$seventh: #353f55;
+$ninth: rgba(251, 250, 247, 0.827);
+
+$shadow:#393e46;
+$textColor1:white;
+$textColor2:#373737;
+$textColor3 : #2C061F;
+$icon1:dodgerblue;
+$icon2:blue;
+$bgColor:rgba(0, 0, 0, 0.807);
+
+/* Devices*/
+$desktop: 1280px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 480px;

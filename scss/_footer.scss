@@ -1,0 +1,127 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+@import "./variables";
+/* Footer */
+footer {
+  padding-bottom: 3em;
+  img {
+    width: 100%;
+    height: 60vh;
+    box-shadow: 0.6em 0.6em 0.6em $shadow;
+    margin-bottom: 3em;
+  }
+  div {
+    @include flexbox (space-around, row);
+    a:hover {
+      font-size: larger;
+    }
+    .fa-twitter {
+      padding-left: 1em;
+      padding-right: 1em;
+      color: $icon1;
+    }
+    .fa-facebook {
+      color: $icon2;
+    }
+    .fa-instagram {
+      color: $fifth;
+    }
+  }
+  /* Move to top button*/
+  .fa-chevron-circle-up {
+    position: absolute;
+    right: 0;
+    padding-bottom: 1em;
+    cursor:pointer;
+    color:$seventh;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width:$desktop) {
+  footer {
+    div {
+      a {
+        font-size: 1.5em;
+      }
+    }
+  }
+  }
+  /* from large laptop to normal desktop*/
+  @media (min-width: $laptop) and (max-width: $desktop) {
+    //follow the main css configuration
+  }
+  /* from tablet to smaller laptop*/
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    footer {
+      .footerImg {
+        height: 30vh;
+      }
+      .fa-chevron-circle-up {
+        font-size: 2em;
+        padding-top: 0.5em;
+      }
+    }
+  }
+  /* from mobile to tablet */
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    footer {
+      div { 
+        a {
+          font-size: 0.7em;
+        }
+        .fa-twitter {
+          font-size: 1em;
+        }
+        .fa-facebook {
+          font-size: 1em;
+        }
+        .fa-instagram {
+          font-size: 1em;
+        }
+      }
+      .footerImg {
+        height: 20vh;
+      }
+      .fa-chevron-circle-up {
+        font-size: 1.5em;
+        padding-top: 0.5em;
+      }
+    }
+  }
+  /* from smaller mobile */
+  @media (max-width: $mobile) {
+    footer {
+      div { 
+        a {
+          font-size: 0.5em;
+        }
+        .fa-twitter {
+          font-size: 0.5em;
+        }
+        .fa-facebook {
+          font-size: 0.5em;
+        }
+        .fa-instagram {
+          font-size: 0.5em;
+        }
+      }
+      .footerImg {
+        height: 15vh;
+      }
+      .fa-chevron-circle-up {
+        font-size: 1em;
+        padding-top: 0.5em;
+      }
+    }
+  }
+  /* Landscape */
+  @media (max-height: 415px) {
+    footer {
+      .footerImg {
+        height: 40vh;
+      }
+    }
+  }

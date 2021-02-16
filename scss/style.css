@@ -1,0 +1,300 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  /* Title */
+}
+
+header .sideBar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .sideBar a {
+  display: block;
+  padding: 0.7em;
+  font-size: 1.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+header .sideBar a i {
+  padding-right: 0.5em;
+  color: white;
+}
+
+header .sideBar a .fa-info {
+  padding-right: 1em;
+  color: white;
+}
+
+header .openBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+header .titleHeader {
+  margin-left: 0;
+  font-size: 3em;
+}
+
+header .titleHeader img {
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  width: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header div .sideBar a {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 2.5em;
+  }
+  header .titleHeader img {
+    position: relative;
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+            box-shadow: 0.7em 1em 1em #2C061F;
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1.5em;
+  }
+  header .titleHeader {
+    font-size: 2em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 1.5em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Footer */
+footer {
+  padding-bottom: 3em;
+  /* Move to top button*/
+}
+
+footer img {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+  margin-bottom: 3em;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a:hover {
+  font-size: larger;
+}
+
+footer div .fa-twitter {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: dodgerblue;
+}
+
+footer div .fa-facebook {
+  color: blue;
+}
+
+footer div .fa-instagram {
+  color: #b46262;
+}
+
+footer .fa-chevron-circle-up {
+  position: absolute;
+  right: 0;
+  padding-bottom: 1em;
+  cursor: pointer;
+  color: #353f55;
+}
+
+footer .fa-chevron-circle-up:hover {
+  color: #ffac2f;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width: 1280px) {
+  footer div a {
+    font-size: 1.5em;
+  }
+}
+
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footerImg {
+    height: 30vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  footer div a {
+    font-size: 0.7em;
+  }
+  footer div .fa-twitter {
+    font-size: 1em;
+  }
+  footer div .fa-facebook {
+    font-size: 1em;
+  }
+  footer div .fa-instagram {
+    font-size: 1em;
+  }
+  footer .footerImg {
+    height: 20vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  footer div a {
+    font-size: 0.5em;
+  }
+  footer div .fa-twitter {
+    font-size: 0.5em;
+  }
+  footer div .fa-facebook {
+    font-size: 0.5em;
+  }
+  footer div .fa-instagram {
+    font-size: 0.5em;
+  }
+  footer .footerImg {
+    height: 15vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1em;
+    padding-top: 0.5em;
+  }
+}
+
+/* Landscape */
+@media (max-height: 415px) {
+  footer .footerImg {
+    height: 40vh;
+  }
+}
+
+* {
+  font-family: Roboto Mono, monospace;
+  color: #373737;
+}
+
+a {
+  color: #353f55;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #b46262;
+}
+/*# sourceMappingURL=style.css.map */

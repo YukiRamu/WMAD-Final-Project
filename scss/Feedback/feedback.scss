@@ -1,0 +1,381 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+@import "../variables";
+
+body {
+  background-image: url("../../img/landscape8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .containerFeedback {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    background-color:$ninth;
+    padding: 1em 0;
+    border-radius: 3%;
+    z-index: 1;
+    /* Feedback form */
+    form {
+      width: 50%;
+      margin: auto;
+      div {
+        padding: 1em;
+        p {
+          text-align: left;
+        }
+        input {
+          width: 100%;
+          height: 5vh;
+          border: none;
+          border-bottom: 0.1em solid $textColor2;
+        }
+        textarea {
+          width: 100%;
+          border: none;
+          border-bottom: 0.1em solid $textColor2;
+        }
+      }
+      .subBtn {
+        padding: 0.5em;
+        width: 20vw;
+        font-size: 1.5em;
+        color: $textColor1;
+        background-color: $fifth;
+        border: none;
+      }
+    }
+  }
+  /* Submission Complete / modal pop-up */
+  .modal {
+    display:none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100vh;
+    background-color: $bgColor;
+    .subComplete {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $textColor1;
+      width: 60%;
+      height: 60vh;
+      padding-top: 2em;
+      text-align: center;
+      box-shadow: 0.7em 1em 1em $textColor3;
+      border-radius: 3%;
+      .close {
+        position: relative;
+        left:40%;
+        font-size: 3em;
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:hover {
+          color: $fifth;
+        }
+      }
+      .message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        p {
+          font-size: 3em;
+        }
+        i {
+          padding: 0.3em;
+          color: $sixth;
+        }
+        .note {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+  /* ============ Media Queries ============ */
+  /* for large desktop*/
+  @media (min-width:$desktop) {
+    .containerFeedback {
+      width: 50%;
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      /* Feedback form */
+      form {
+        width: 60%;
+        div {
+          padding-bottom: 2em;
+        }
+        .subBtn {
+          padding: 0.5em;
+          margin: 1em;
+          width: 25vw;
+          font-size: 1.5em;
+          border: none;
+        }
+      }
+    }
+    /* Submission Complete / modal pop-up */
+    .modal {
+      .subComplete {
+        width:50%;
+        height: 60vh;
+        padding-top: 2em;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 2.5em;
+          }
+          i {
+            padding: 0.8em;
+          }
+          .note {
+            font-size: 1.8em;
+          }
+        }
+      }
+    }
+  }
+  /* from large laptop to normal desktop*/
+  @media (min-width: $laptop) and (max-width: $desktop) {
+    //follow the main css configuration
+  }
+  /* from tablet to smaller laptop*/
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    .containerFeedback {
+      width: 70%;
+      padding: 3em 0;
+      h1 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      /* Feedback form */
+      form {
+        width: 60%;
+        div {
+          padding-bottom: 2em;
+        }
+        .subBtn {
+          padding: 0.5em;
+          margin: 1em;
+          width: 25vw;
+          font-size: 1.5em;
+          border: none;
+        }
+      }
+    }
+    /* Submission Complete / modal pop-up */
+    .modal {
+      .subComplete {
+        width:60%;
+        height: 50vh;
+        padding: 4em 0;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 2em;
+          }
+          i {
+            padding: 0.8em;
+          }
+          .note {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  /* from mobile to tablet */
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    .containerFeedback {
+      width: 80%;
+      padding: 3em 0;
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      /* Feedback form */
+      form {
+        width: 100%;
+        div {
+          padding-bottom: 2em;
+          input {
+            height: 3vh;
+          }
+          textarea {
+            height: 5vh;
+          }
+        }
+        .subBtn {
+          padding: 0.3em;
+          margin: 0.7em;
+          width: 40vw;
+          font-size: 1em;
+        }
+      }
+    }
+    /* Submission Complete / modal pop-up */
+    .modal {
+      .subComplete {
+        width: 80%;
+        height: 50vh;
+        padding: 3em 0;
+        .close {
+          font-size: 1.5em;
+        }
+        .message {
+          p {
+            font-size: 1.5em;
+          }
+          i {
+            padding: 0.8em;           
+          }
+          .note {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  /* from smaller mobile */
+  @media (max-width: $mobile) {
+    .containerFeedback {
+      width: 80%;
+      padding: 3em 0;
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.8em;
+        text-align: justify;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      /* Feedback form */
+      form {
+        width: 100%;
+        div {
+          padding-bottom: 2em;
+          input {
+            height: 3vh;
+          }
+          textarea {
+            height: 3vh;
+          }
+        }
+        .subBtn {
+          padding: 0.3em;
+          margin: 0.7em;
+          width: 40vw;
+          font-size: 1em;
+        }
+      }
+    }
+    /* Submission Complete / modal pop-up */
+    .modal {
+      .subComplete {
+        width: 80%;
+        height: 60vh;
+        padding: 5em 0;
+        .close {
+          font-size: 1.5em;
+        }
+        .message {
+          p {
+            font-size: 1.5em;
+          }
+          i {
+            padding: 0.8em;
+          }
+          .note {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  /* Landscape */
+  @media (max-height: 415px) {
+    .containerFeedback {
+      width: 80%;
+      padding: 0.7em 0;
+      height: 80vh;
+      position: relative;
+      h1 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.5em;
+        text-align: center;
+      }
+      /* Feedback form */
+      form {
+        width: 100%;
+        height:fit-content;
+        position: absolute;
+        bottom: 5%;
+        div {
+          padding-bottom: 1em;
+          input {
+            height: 4vh;
+          }
+          textarea {
+            height: 4vh;
+          }
+        }
+        .subBtn {
+          padding: 0.3em;
+          margin: 0.8em;
+          width: 40vw;
+          font-size: 1em;
+        }
+      }
+    }
+    /* Submission Complete / modal pop-up */
+    .modal {
+      .subComplete {
+        width: 70%;
+        height: 70vh;
+        padding: 0.5em 0;
+        .close {
+          font-size: 1.5em;
+        }
+        .message {
+          p {
+            font-size: 1.5em;
+          }
+          i {
+            padding: 0.8em;
+          }
+          .note {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,717 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  /* Title */
+}
+
+header .sideBar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .sideBar a {
+  display: block;
+  padding: 0.7em;
+  font-size: 1.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+header .sideBar a i {
+  padding-right: 0.5em;
+  color: white;
+}
+
+header .sideBar a .fa-info {
+  padding-right: 1em;
+  color: white;
+}
+
+header .openBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+header .titleHeader {
+  margin-left: 0;
+  font-size: 3em;
+}
+
+header .titleHeader img {
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  width: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header div .sideBar a {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 2.5em;
+  }
+  header .titleHeader img {
+    position: relative;
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+            box-shadow: 0.7em 1em 1em #2C061F;
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1.5em;
+  }
+  header .titleHeader {
+    font-size: 2em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 1.5em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Footer */
+footer {
+  padding-bottom: 3em;
+  /* Move to top button*/
+}
+
+footer img {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+  margin-bottom: 3em;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a:hover {
+  font-size: larger;
+}
+
+footer div .fa-twitter {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: dodgerblue;
+}
+
+footer div .fa-facebook {
+  color: blue;
+}
+
+footer div .fa-instagram {
+  color: #b46262;
+}
+
+footer .fa-chevron-circle-up {
+  position: absolute;
+  right: 0;
+  padding-bottom: 1em;
+  cursor: pointer;
+  color: #353f55;
+}
+
+footer .fa-chevron-circle-up:hover {
+  color: #ffac2f;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width: 1280px) {
+  footer div a {
+    font-size: 1.5em;
+  }
+}
+
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footerImg {
+    height: 30vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  footer div a {
+    font-size: 0.7em;
+  }
+  footer div .fa-twitter {
+    font-size: 1em;
+  }
+  footer div .fa-facebook {
+    font-size: 1em;
+  }
+  footer div .fa-instagram {
+    font-size: 1em;
+  }
+  footer .footerImg {
+    height: 20vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  footer div a {
+    font-size: 0.5em;
+  }
+  footer div .fa-twitter {
+    font-size: 0.5em;
+  }
+  footer div .fa-facebook {
+    font-size: 0.5em;
+  }
+  footer div .fa-instagram {
+    font-size: 0.5em;
+  }
+  footer .footerImg {
+    height: 15vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1em;
+    padding-top: 0.5em;
+  }
+}
+
+/* Landscape */
+@media (max-height: 415px) {
+  footer .footerImg {
+    height: 40vh;
+  }
+}
+
+.containerArticleList {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  /* header color */
+  /* main */
+  /* ============ Media Queries ============ */
+  /* for large desktop*/
+  /* from large laptop to normal desktop*/
+  /* from tablet to smaller laptop*/
+  /* from mobile to tablet */
+  /* from smaller mobile */
+  /* Landscape */
+}
+
+.containerArticleList header {
+  border-bottom: 0.2em solid #353f55;
+}
+
+.containerArticleList header .sideBar {
+  background-color: #353f55;
+}
+
+.containerArticleList header .sideBar a:hover {
+  color: #ffac2f;
+}
+
+.containerArticleList header .sideBar .fa-times:hover {
+  color: #ffac2f;
+}
+
+.containerArticleList header .titleHeader {
+  color: #353f55;
+}
+
+.containerArticleList main p {
+  text-align: justify;
+  color: #373737;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  border-left: 0.5em solid #353f55;
+  background-color: rgba(251, 250, 247, 0.827);
+}
+
+.containerArticleList main .articlePanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+.containerArticleList main .articlePanel .panel {
+  margin: 1em;
+  padding: 0.5em 0;
+  text-align: center;
+  border: 0.1em groove #353f55;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+  background-color: rgba(251, 250, 247, 0.827);
+  opacity: 0;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.containerArticleList main .articlePanel .panel .line1 {
+  border-bottom: 0.1em groove #353f55;
+}
+
+.containerArticleList main .articlePanel .panel .line1 img {
+  width: 20vw;
+  height: 40vh;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  opacity: 0.8;
+}
+
+.containerArticleList main .articlePanel .panel .line2 img {
+  width: 10%;
+  height: 5vh;
+  border-radius: 50%;
+}
+
+.containerArticleList main .articlePanel .panel .line2 span {
+  font-size: 1.5em;
+}
+
+.containerArticleList main .articlePanel .panel .line3 {
+  background-color: #353f55;
+  padding: 0.1em;
+  margin: 0.2em auto;
+  width: 30%;
+}
+
+.containerArticleList main .articlePanel .panel .line4 {
+  padding-bottom: 1em;
+}
+
+.containerArticleList main .articlePanel .showImg {
+  opacity: 1;
+}
+
+.containerArticleList main .backLink {
+  font-size: 2em;
+}
+
+.containerArticleList footer {
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerArticleList {
+    /* main */
+  }
+  .containerArticleList main p {
+    font-size: 0.8em;
+  }
+  .containerArticleList main .articlePanel {
+    display: block;
+    margin: 1em 0;
+  }
+  .containerArticleList main .articlePanel .panel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat auto-fit, 1fr 1fr;
+        grid-template-columns: repeat auto-fit, 1fr 1fr;
+  }
+  .containerArticleList main .articlePanel .panel .line1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    position: relative;
+    top: 10%;
+    left: 0;
+  }
+  .containerArticleList main .articlePanel .panel .line1 img {
+    width: 30vw;
+    height: 15vh;
+    margin: 0;
+    margin-left: 2em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 img {
+    width: 20%;
+    height: 5vh;
+  }
+  .containerArticleList main .articlePanel .panel .line2 span {
+    font-size: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0.1em auto;
+    margin-top: 9em;
+    height: 1%;
+  }
+  .containerArticleList main .articlePanel .panel .line4 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    font-size: 1em;
+  }
+  .containerArticleList main .backLink {
+    font-size: 1.5em;
+  }
+  .containerArticleList footer .footerImg {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .containerArticleList {
+    /* main */
+  }
+  .containerArticleList main p {
+    font-size: 0.5em;
+  }
+  .containerArticleList main .articlePanel {
+    display: block;
+    margin: 1em 0;
+  }
+  .containerArticleList main .articlePanel .panel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat auto-fit, 1fr 1fr;
+        grid-template-columns: repeat auto-fit, 1fr 1fr;
+  }
+  .containerArticleList main .articlePanel .panel .line1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    position: relative;
+    top: 10%;
+    left: 0;
+  }
+  .containerArticleList main .articlePanel .panel .line1 img {
+    width: 30vw;
+    height: 20vh;
+    margin: 0;
+    margin-left: 2em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 img {
+    width: 20%;
+    height: 10vh;
+  }
+  .containerArticleList main .articlePanel .panel .line2 span {
+    font-size: 1em;
+  }
+  .containerArticleList main .articlePanel .panel .line3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0.1em auto;
+    margin-top: 7em;
+    height: 1%;
+  }
+  .containerArticleList main .articlePanel .panel .line4 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    font-size: 0.8em;
+  }
+  .containerArticleList main .backLink {
+    font-size: 1.3em;
+  }
+  .containerArticleList footer .footerImg {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerArticleList {
+    /* main */
+  }
+  .containerArticleList main p {
+    font-size: 0.5em;
+  }
+  .containerArticleList main .articlePanel {
+    display: block;
+    margin: 0em;
+  }
+  .containerArticleList main .articlePanel .panel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat auto-fit, 1fr 1fr;
+        grid-template-columns: repeat auto-fit, 1fr 1fr;
+    border-radius: 2%;
+    -webkit-box-shadow: 0.2em 0.5em 0.5em #353f55;
+            box-shadow: 0.2em 0.5em 0.5em #353f55;
+    margin: 0.3em;
+  }
+  .containerArticleList main .articlePanel .panel .line1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    position: relative;
+    top: 10%;
+    left: 0;
+  }
+  .containerArticleList main .articlePanel .panel .line1 img {
+    width: 20vw;
+    height: 10vh;
+    margin: 0;
+    margin-left: 2em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 img {
+    width: 15%;
+    height: 5vh;
+  }
+  .containerArticleList main .articlePanel .panel .line2 span {
+    font-size: 0.8em;
+  }
+  .containerArticleList main .articlePanel .panel .line3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0.1em auto;
+    margin-top: 5.5em;
+    height: 0.2%;
+  }
+  .containerArticleList main .articlePanel .panel .line4 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    font-size: 0.5em;
+  }
+  .containerArticleList main .backLink {
+    display: block;
+    padding-top: 1em;
+    font-size: 1em;
+  }
+  .containerArticleList footer .footerImg {
+    height: 20vh;
+  }
+}
+
+@media (max-height: 415px) {
+  .containerArticleList {
+    /* main */
+  }
+  .containerArticleList main p {
+    font-size: 1em;
+  }
+  .containerArticleList main .articlePanel {
+    display: block;
+    margin: 0em;
+  }
+  .containerArticleList main .articlePanel .panel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat auto-fit, 1fr 1fr;
+        grid-template-columns: repeat auto-fit, 1fr 1fr;
+    border-radius: 2%;
+    -webkit-box-shadow: 0.2em 0.5em 0.5em #353f55;
+            box-shadow: 0.2em 0.5em 0.5em #353f55;
+    margin: 0.3em;
+  }
+  .containerArticleList main .articlePanel .panel .line1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    position: relative;
+    top: 10%;
+    left: 0;
+  }
+  .containerArticleList main .articlePanel .panel .line1 img {
+    width: 25vw;
+    height: 35vh;
+    margin: 0;
+    margin-left: 4em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line2 img {
+    width: 15%;
+    height: 15vh;
+  }
+  .containerArticleList main .articlePanel .panel .line2 span {
+    font-size: 1.5em;
+  }
+  .containerArticleList main .articlePanel .panel .line3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0.1em auto;
+    margin-top: 7.5em;
+    height: 0.2%;
+  }
+  .containerArticleList main .articlePanel .panel .line4 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    font-size: 1em;
+  }
+  .containerArticleList main .backLink {
+    display: block;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+  }
+  .containerArticleList footer .footerImg {
+    height: 35vh;
+  }
+}
+/*# sourceMappingURL=articleList1.css.map */

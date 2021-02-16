@@ -1,0 +1,450 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+@import "../variables";
+@import "../header";
+@import "../footer";
+
+.containerExplore {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  /* header color */
+  header {
+    border-bottom: 0.2em solid $primary;
+    .sideBar {
+      background-color: $primary;
+      a:hover {
+        color: $seventh;
+      }
+      .fa-times:hover {
+        color: $seventh;
+      }
+    }
+    .titleHeader {
+      color: $primary;
+      span {
+        color: $primary;
+      }
+    }
+  }
+  /* main */
+  main {
+    overflow-x: hidden;
+    box-sizing:border-box;
+    p {
+      text-align: justify;
+      color: $textColor2;
+      padding-bottom: 1em;
+      padding-left: 0.5em;
+      border-left: 0.5em solid $primary;
+      background-color: $ninth;
+    }
+    .grid {
+      @include grid ();
+      img {
+        width: 99%;
+        height: 100%;
+        box-shadow: 0.6em 0.6em 0.6em $shadow;     
+      }
+      div {
+        text-align: center;
+        background-color: $ninth;
+        a {
+          font-size: 1.5em;
+          &:hover {
+            font-size: 1.7em;
+          }
+        }
+      }
+      /* grid config*/
+      .imgOne {
+        grid-column: 1/7;
+        grid-row: 1/4;
+      }
+      .content1 {
+        grid-column: 1/7;
+        grid-row: 4/5;
+      }
+      .imgTwo {
+        grid-column: 7/13;
+        grid-row: 2/6;
+      }
+      .content2 {
+        grid-column: 7/13;
+        grid-row: 6/7;
+      }
+      .imgThree {
+        grid-column: 1/7;
+        grid-row: 5/9;
+      }
+      .content3 {
+        grid-column: 1/7;
+        grid-row: 9/10;
+      }
+      .imgFour {
+        grid-column: 7/13;
+        grid-row: 7/12;
+      }
+      .content4 {
+        grid-column: 7/13;
+        grid-row: 12/13;
+      }
+    }
+  }
+   /* image slide config*/
+   .slideConts {
+    transition: 1s;
+    width: 100%;
+   }
+   .slideLeft {
+     transform: translate(-100em, 0);
+   }
+   .slideRight {
+    transform: translate(100em, 0);
+  }
+  .slideLeft.show {
+    transform: translate(0, 0)!important;
+  }
+  .slideRight.show {
+   transform: translate(0, 0)!important;
+ }
+ /* bottom image */
+  .bottomImg {
+    width: 100%;
+    height: 60vh;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 0.6em 0.6em 0.6em $shadow;
+  }
+  /* Subscribe */
+  section {
+    text-align: center;
+    margin-bottom: 3em;
+    padding-bottom: 0.3em;
+    background-color: $ninth;
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    form input {
+      height: 8vh;
+      border: 0.1em solid $seventh;
+    }
+    .emailInput {
+      width: 50%;
+    }
+    .subButton {
+      background-color: $seventh;
+      color: $textColor1;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+  .modal {
+    display:none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100vh;
+    background-color: $bgColor;
+    .subComplete {
+      background-color: $textColor1;
+      position: relative;
+      margin: 15vh auto;
+      width: 60%;
+      height: 70vh;
+      padding: 1em 0;
+      text-align: center;
+      border-radius: 3%;
+      .close {
+        position: relative;
+        left:40%;
+        font-size: 3em;
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:hover {
+          color: $fifth;
+        }
+      }
+      .message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        p {
+          font-size: 3em;
+        }
+        i {
+          padding: 0.5em;
+          color: $sixth;
+        }
+        .note {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width:$desktop) {
+  .containerExplore {
+    main {
+      p {
+        font-size: 1.3em;
+      }
+      .grid {
+        h2 {
+          font-size: 2em;
+        }
+      }
+    }
+    section {
+      .emailInput {
+        font-size: 1.5em;
+      }
+      .subButton {
+        width: 10vw;
+        font-size: 1.5em;
+      } 
+    }
+    .modal {
+      .subComplete {
+        margin: 16vh auto;
+        width: 50%;
+        height: 60vh;
+        padding: 1em 1em;
+        .close {
+          font-size: 3em;
+        }
+        .message {
+          p {
+            font-size: 3em;
+          }
+          i {
+            padding: 0.2em;
+          }
+          .note {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+/* from large laptop to normal desktop*/
+@media (min-width: $laptop) and (max-width: $desktop) {
+  //follow the main css configuration
+}
+/* from tablet to smaller laptop*/
+@media (min-width: $tablet) and (max-width: $laptop) {
+  .containerExplore {
+    main {
+      p {
+        font-size: 0.8em;
+      }
+      .grid {
+        div {
+          h2 {
+            font-size: 1.3em;
+          }
+          a {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    .bottomImg {
+      height: 30vh;
+    }
+    .subscribe {
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+      form input {
+        height: 6vh;
+      }
+    }
+    .modal {
+      .subComplete {
+        margin: 14vh auto;
+        width: 60%;
+        height: 70vh;
+        padding: 1em 1em;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 2em;
+          }
+          i {
+            padding: 0.5em;
+          }
+          .note {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}
+/* from mobile to tablet */
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .containerExplore {
+    main {
+      p {
+        font-size: 0.8em;
+      }
+      .grid {
+        div {
+          h2 {
+            font-size: 1em;
+          }
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    .subscribe {
+      h2 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      form input {
+        height: 5vh;
+      }
+    }
+    .bottomImg {
+      height: 20vh;
+    }
+    .modal {
+      .subComplete {
+        margin: 14vh auto;
+        width: 60%;
+        height: 70vh;
+        padding: 1em 1em;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 2em;
+          }
+          i {
+            padding: 0.5em;
+          }
+          .note {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}
+/* from smaller mobile */
+@media (max-width: $mobile) {
+  .containerExplore {
+    main {
+      p {
+        font-size: 0.6em;
+      }
+      .grid {
+        div {
+          h2 {
+            font-size: 0.8em;
+          }
+          a {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+    .subscribe {
+      h2 {
+        font-size: 0.8em;
+      }
+      p {
+        font-size: 0.6em;
+      }
+      form input {
+        height: 5vh;
+        font-size: 0.8em;
+      }
+    }
+    .bottomImg {
+      height: 15vh;
+    }
+    .modal {
+      .subComplete {
+        margin: 14vh auto;
+        width: 60%;
+        height: 70vh;
+        padding: 1em 1em;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 2em;
+          }
+          i {
+            padding: 0.5em;
+          }
+          .note {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}
+/* Landscape */
+@media (max-height: 415px) {
+  .containerExplore {
+    .subscribe {
+      form input {
+        height: 7vh;
+        font-size: 0.8em;
+      }
+    }
+    .bottomImg {
+      height: 40vh;
+    }
+    .modal {
+      .subComplete {
+        margin: 10vh auto;
+        width: 60%;
+        height: 70vh;
+        padding: 1em 1em;
+        .close {
+          font-size: 2em;
+        }
+        .message {
+          p {
+            font-size: 1.5em;
+          }
+          i {
+            padding: 0em;
+          }
+          .note {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!--Yuki Matsubara Morning Class Final Project: Online Travel Magazine -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gateway to Escape</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Permanent+Marker&family=Roboto+Mono:ital,wght@1,300&family=Rock+Salt&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
+    <!--Links to external css-->
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="scss/style.css">
+    <link type="text/css" rel="stylesheet" href="scss/index/index.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="containerWeb">
+      <nav>
+        <img class="logo" src="./img/logo.jpg" alt="logo">
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTRIBUTORS</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="./feedback.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Get Inspired and Keep Travelling</h1>
+      <form name="userSelection" class="userSelection">
+        <select name="destination" id="destination">
+          <option value="">Destination</option>
+          <option value="Europe">Europe</option>
+          <option value="US & Canada">US & Canada</option>
+          <option value="Latin America">Latin America</option>
+          <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+          <option value="Middle East">Middle East</option>
+        </select>
+        <p>x</p>
+        <select name="theme" id="theme">
+          <option value="">Theme</option>
+          <option value="Art & Design">Art & Design</option>
+          <option value="Food & Drink">Food & Drink</option>
+          <option value="Culture & Tradition">Culture & Tradition</option>
+          <option value="Special Event">Special Event</option>
+        </select>
+      </form>      
+      <button type="submit" id="clickBtn" name="click">
+        <span>...click the plane to explore </span>
+        </i><i class="fas fa-plane fa-6x"></i>
+      </button>
+    </div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+
+</html>

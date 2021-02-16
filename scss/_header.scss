@@ -1,0 +1,131 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+@import "./variables";
+/* header */
+header {
+  @include flexbox (flex-start, row);
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  .sideBar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $textColor1;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 2em;
+    transition: 0.5s;
+    a {
+      display: block;
+      padding: 0.7em;
+      font-size: 1.5em;
+      transition: 0.3s;
+      color: $textColor1;
+      i {
+        padding-right: 0.5em;
+        color: $textColor1;
+      }
+      .fa-info {
+        padding-right: 1em;
+        color: $textColor1;
+      }
+    }
+  }
+  .openBtn {
+    cursor: pointer;
+    border:none;
+    background: none;
+  }
+  /* Title */
+  .titleHeader {
+    margin-left: 0;
+    font-size: 3em;
+    img {
+      @include logo ();
+      width: 1.5em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+  }
+}
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width:$desktop) {
+  //follow the main css configuration
+}
+/* from large laptop to normal desktop*/
+@media (min-width: $laptop) and (max-width: $desktop) {
+  //follow the main css configuration
+}
+/* from tablet to smaller laptop*/
+@media (min-width: $tablet) and (max-width: $laptop) {
+  header {
+    div {
+      .sideBar {
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+    .titleHeader {
+      font-size: 2.5em;
+      img {
+        @include logo ();
+        width: 1.3em;
+        height: 1.3em;
+      }
+    }
+  }
+}
+/* from mobile to tablet */
+@media (min-width: $mobile) and (max-width: $tablet) {
+  header {
+    div {
+      .sideBar {
+        a {
+          font-size: 0.8em;
+        }
+      }
+      .openBtn {
+        .fa-bars {
+          font-size: 1.5em;
+        }
+      }
+    }
+    .titleHeader {
+      font-size: 2em;
+      img {
+        width: 1.3em;
+        height: 1.3em;
+      }
+    }
+  }
+}
+/* from smaller mobile */
+@media (max-width: $mobile) {
+  header {
+    div {
+      .sideBar {
+        a {
+          font-size: 0.8em;
+        }
+      }
+      .openBtn {
+        .fa-bars {
+          font-size: 1em;
+        }
+      }
+    }
+    .titleHeader {
+      font-size: 1.5em;
+      img {
+        width: 1.3em;
+        height: 1.3em;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,760 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  /* Title */
+}
+
+header .sideBar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .sideBar a {
+  display: block;
+  padding: 0.7em;
+  font-size: 1.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+header .sideBar a i {
+  padding-right: 0.5em;
+  color: white;
+}
+
+header .sideBar a .fa-info {
+  padding-right: 1em;
+  color: white;
+}
+
+header .openBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+header .titleHeader {
+  margin-left: 0;
+  font-size: 3em;
+}
+
+header .titleHeader img {
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  width: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header div .sideBar a {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 2.5em;
+  }
+  header .titleHeader img {
+    position: relative;
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+            box-shadow: 0.7em 1em 1em #2C061F;
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1.5em;
+  }
+  header .titleHeader {
+    font-size: 2em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 1.5em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Footer */
+footer {
+  padding-bottom: 3em;
+  /* Move to top button*/
+}
+
+footer img {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+  margin-bottom: 3em;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a:hover {
+  font-size: larger;
+}
+
+footer div .fa-twitter {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: dodgerblue;
+}
+
+footer div .fa-facebook {
+  color: blue;
+}
+
+footer div .fa-instagram {
+  color: #b46262;
+}
+
+footer .fa-chevron-circle-up {
+  position: absolute;
+  right: 0;
+  padding-bottom: 1em;
+  cursor: pointer;
+  color: #353f55;
+}
+
+footer .fa-chevron-circle-up:hover {
+  color: #ffac2f;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width: 1280px) {
+  footer div a {
+    font-size: 1.5em;
+  }
+}
+
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footerImg {
+    height: 30vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  footer div a {
+    font-size: 0.7em;
+  }
+  footer div .fa-twitter {
+    font-size: 1em;
+  }
+  footer div .fa-facebook {
+    font-size: 1em;
+  }
+  footer div .fa-instagram {
+    font-size: 1em;
+  }
+  footer .footerImg {
+    height: 20vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  footer div a {
+    font-size: 0.5em;
+  }
+  footer div .fa-twitter {
+    font-size: 0.5em;
+  }
+  footer div .fa-facebook {
+    font-size: 0.5em;
+  }
+  footer div .fa-instagram {
+    font-size: 0.5em;
+  }
+  footer .footerImg {
+    height: 15vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1em;
+    padding-top: 0.5em;
+  }
+}
+
+/* Landscape */
+@media (max-height: 415px) {
+  footer .footerImg {
+    height: 40vh;
+  }
+}
+
+.containerExplore {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  /* header color */
+  /* main */
+  /* image slide config*/
+  /* bottom image */
+  /* Subscribe */
+}
+
+.containerExplore header {
+  border-bottom: 0.2em solid #ffac2f;
+}
+
+.containerExplore header .sideBar {
+  background-color: #ffac2f;
+}
+
+.containerExplore header .sideBar a:hover {
+  color: #353f55;
+}
+
+.containerExplore header .sideBar .fa-times:hover {
+  color: #353f55;
+}
+
+.containerExplore header .titleHeader {
+  color: #ffac2f;
+}
+
+.containerExplore header .titleHeader span {
+  color: #ffac2f;
+}
+
+.containerExplore main {
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.containerExplore main p {
+  text-align: justify;
+  color: #373737;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  border-left: 0.5em solid #ffac2f;
+  background-color: rgba(251, 250, 247, 0.827);
+}
+
+.containerExplore main .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 2em;
+  width: 100%;
+  /* grid config*/
+}
+
+.containerExplore main .grid img {
+  width: 99%;
+  height: 100%;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+}
+
+.containerExplore main .grid div {
+  text-align: center;
+  background-color: rgba(251, 250, 247, 0.827);
+}
+
+.containerExplore main .grid div a {
+  font-size: 1.5em;
+}
+
+.containerExplore main .grid div a:hover {
+  font-size: 1.7em;
+}
+
+.containerExplore main .grid .imgOne {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.containerExplore main .grid .content1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.containerExplore main .grid .imgTwo {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+}
+
+.containerExplore main .grid .content2 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.containerExplore main .grid .imgThree {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 4;
+  grid-row: 5/9;
+}
+
+.containerExplore main .grid .content3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9/10;
+}
+
+.containerExplore main .grid .imgFour {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 4;
+  grid-row: 6/10;
+}
+
+.containerExplore main .grid .content4 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10/11;
+}
+
+.containerExplore .slideConts {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+}
+
+.containerExplore .slideLeft {
+  -webkit-transform: translate(-100em, 0);
+          transform: translate(-100em, 0);
+}
+
+.containerExplore .slideRight {
+  -webkit-transform: translate(100em, 0);
+          transform: translate(100em, 0);
+}
+
+.containerExplore .slideLeft.show {
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+
+.containerExplore .slideRight.show {
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+
+.containerExplore .bottomImg {
+  width: 100%;
+  height: 60vh;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+}
+
+.containerExplore section {
+  text-align: center;
+  margin-bottom: 3em;
+  padding-bottom: 0.3em;
+  background-color: rgba(251, 250, 247, 0.827);
+}
+
+.containerExplore section h2 {
+  font-size: 2em;
+}
+
+.containerExplore section p {
+  font-size: 1.5em;
+}
+
+.containerExplore section form input {
+  height: 8vh;
+  border: 0.1em solid #353f55;
+}
+
+.containerExplore section .emailInput {
+  width: 50%;
+}
+
+.containerExplore section .subButton {
+  background-color: #353f55;
+  color: white;
+}
+
+.containerExplore section .subButton:hover {
+  background-color: #ffac2f;
+}
+
+.containerExplore .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.807);
+}
+
+.containerExplore .modal .subComplete {
+  background-color: white;
+  position: relative;
+  margin: 15vh auto;
+  width: 60%;
+  height: 70vh;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 3%;
+}
+
+.containerExplore .modal .subComplete .close {
+  position: relative;
+  left: 40%;
+  font-size: 3em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.containerExplore .modal .subComplete .close:hover {
+  color: #b46262;
+}
+
+.containerExplore .modal .subComplete .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.containerExplore .modal .subComplete .message p {
+  font-size: 3em;
+}
+
+.containerExplore .modal .subComplete .message i {
+  padding: 0.5em;
+  color: #86ABA1;
+}
+
+.containerExplore .modal .subComplete .message .note {
+  font-size: 2em;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width: 1280px) {
+  .containerExplore main p {
+    font-size: 1.3em;
+  }
+  .containerExplore main .grid h2 {
+    font-size: 2em;
+  }
+  .containerExplore section .emailInput {
+    font-size: 1.5em;
+  }
+  .containerExplore section .subButton {
+    width: 10vw;
+    font-size: 1.5em;
+  }
+  .containerExplore .modal .subComplete {
+    margin: 16vh auto;
+    width: 50%;
+    height: 60vh;
+    padding: 1em 1em;
+  }
+  .containerExplore .modal .subComplete .close {
+    font-size: 3em;
+  }
+  .containerExplore .modal .subComplete .message p {
+    font-size: 3em;
+  }
+  .containerExplore .modal .subComplete .message i {
+    padding: 0.2em;
+  }
+  .containerExplore .modal .subComplete .message .note {
+    font-size: 2em;
+  }
+}
+
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerExplore main p {
+    font-size: 0.8em;
+  }
+  .containerExplore main .grid div h2 {
+    font-size: 1.3em;
+  }
+  .containerExplore main .grid div a {
+    font-size: 1em;
+  }
+  .containerExplore .bottomImg {
+    height: 30vh;
+  }
+  .containerExplore .subscribe h2 {
+    font-size: 1.5em;
+  }
+  .containerExplore .subscribe p {
+    font-size: 1em;
+  }
+  .containerExplore .subscribe form input {
+    height: 6vh;
+  }
+  .containerExplore .modal .subComplete {
+    margin: 14vh auto;
+    width: 60%;
+    height: 70vh;
+    padding: 1em 1em;
+  }
+  .containerExplore .modal .subComplete .close {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message p {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message i {
+    padding: 0.5em;
+  }
+  .containerExplore .modal .subComplete .message .note {
+    font-size: 1.3em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  .containerExplore main p {
+    font-size: 0.8em;
+  }
+  .containerExplore main .grid div h2 {
+    font-size: 1em;
+  }
+  .containerExplore main .grid div a {
+    font-size: 0.8em;
+  }
+  .containerExplore .subscribe h2 {
+    font-size: 1em;
+  }
+  .containerExplore .subscribe p {
+    font-size: 0.8em;
+  }
+  .containerExplore .subscribe form input {
+    height: 5vh;
+  }
+  .containerExplore .bottomImg {
+    height: 20vh;
+  }
+  .containerExplore .modal .subComplete {
+    margin: 14vh auto;
+    width: 60%;
+    height: 70vh;
+    padding: 1em 1em;
+  }
+  .containerExplore .modal .subComplete .close {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message p {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message i {
+    padding: 0.5em;
+  }
+  .containerExplore .modal .subComplete .message .note {
+    font-size: 1.3em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  .containerExplore main p {
+    font-size: 0.6em;
+  }
+  .containerExplore main .grid div h2 {
+    font-size: 0.8em;
+  }
+  .containerExplore main .grid div a {
+    font-size: 0.6em;
+  }
+  .containerExplore .subscribe h2 {
+    font-size: 0.8em;
+  }
+  .containerExplore .subscribe p {
+    font-size: 0.6em;
+  }
+  .containerExplore .subscribe form input {
+    height: 5vh;
+    font-size: 0.8em;
+  }
+  .containerExplore .bottomImg {
+    height: 15vh;
+  }
+  .containerExplore .modal .subComplete {
+    margin: 14vh auto;
+    width: 60%;
+    height: 70vh;
+    padding: 1em 1em;
+  }
+  .containerExplore .modal .subComplete .close {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message p {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message i {
+    padding: 0.5em;
+  }
+  .containerExplore .modal .subComplete .message .note {
+    font-size: 1.3em;
+  }
+}
+
+/* Landscape */
+@media (max-height: 415px) {
+  .containerExplore .subscribe form input {
+    height: 7vh;
+    font-size: 0.8em;
+  }
+  .containerExplore .bottomImg {
+    height: 40vh;
+  }
+  .containerExplore .modal .subComplete {
+    margin: 10vh auto;
+    width: 60%;
+    height: 70vh;
+    padding: 1em 1em;
+  }
+  .containerExplore .modal .subComplete .close {
+    font-size: 2em;
+  }
+  .containerExplore .modal .subComplete .message p {
+    font-size: 1.5em;
+  }
+  .containerExplore .modal .subComplete .message i {
+    padding: 0em;
+  }
+  .containerExplore .modal .subComplete .message .note {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=explore2.css.map */

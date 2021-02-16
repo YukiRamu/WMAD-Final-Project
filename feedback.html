@@ -1,0 +1,55 @@
+<!--Yuki Matsubara Morning Class Final Project: Online Travel Magazine -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Permanent+Marker&family=Roboto+Mono:ital,wght@1,300&family=Rock+Salt&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
+    <!--Links to external css-->
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="scss/style.css">
+    <link type="text/css" rel="stylesheet" href="scss/Feedback/feedback.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="containerFeedback">
+      <!--Feedback form-->
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Submit your general editorial enquiries and comments. <i class="far fa-grin-alt"></i></p>
+      <form>
+        <div>
+          <p>Name:</p>
+          <input type="text" name="fullName" id="fullName">
+        </div>
+        <div>
+          <p>Email Address:</p>
+          <input type="email" name="emailAddress" id="email">
+         </div>
+        <div>
+          <p>Enquiries or Comments:</p>
+          <textarea type="textarea" name="comments" id="comments" ></textarea>
+        </div>
+        <input class="subBtn" id="subButton" type="submit" value="Submit">   
+      </form>
+    </div>
+    <!--Submission Complete / modal pop-up-->
+    <div id="PopUp" class="modal">
+      <div id="comp" class="subComplete">
+        <input type="button" class="close" id="closeBtn" value="x" onclick="location.href='index.html'">
+        <div class="message">
+          <p>Thank you for your feedback!</p>
+          <i class="far fa-check-circle fa-4x"></i>
+          <p class="note">A confirmation has been sent to your email.</p>
+        </div>
+      </div>
+     </div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/feedback.js"></script>
+  </body>
+  </html>

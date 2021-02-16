@@ -1,0 +1,398 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+body {
+  background-image: url("../../img/landscape8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* Submission Complete / modal pop-up */
+  /* ============ Media Queries ============ */
+  /* for large desktop*/
+  /* from large laptop to normal desktop*/
+  /* from tablet to smaller laptop*/
+  /* from mobile to tablet */
+  /* from smaller mobile */
+  /* Landscape */
+}
+
+body .containerFeedback {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  background-color: rgba(251, 250, 247, 0.827);
+  padding: 1em 0;
+  border-radius: 3%;
+  z-index: 1;
+  /* Feedback form */
+}
+
+body .containerFeedback form {
+  width: 50%;
+  margin: auto;
+}
+
+body .containerFeedback form div {
+  padding: 1em;
+}
+
+body .containerFeedback form div p {
+  text-align: left;
+}
+
+body .containerFeedback form div input {
+  width: 100%;
+  height: 5vh;
+  border: none;
+  border-bottom: 0.1em solid #373737;
+}
+
+body .containerFeedback form div textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 0.1em solid #373737;
+}
+
+body .containerFeedback form .subBtn {
+  padding: 0.5em;
+  width: 20vw;
+  font-size: 1.5em;
+  color: white;
+  background-color: #b46262;
+  border: none;
+}
+
+body .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.807);
+}
+
+body .modal .subComplete {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  width: 60%;
+  height: 60vh;
+  padding-top: 2em;
+  text-align: center;
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  border-radius: 3%;
+}
+
+body .modal .subComplete .close {
+  position: relative;
+  left: 40%;
+  font-size: 3em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body .modal .subComplete .close:hover {
+  color: #b46262;
+}
+
+body .modal .subComplete .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+body .modal .subComplete .message p {
+  font-size: 3em;
+}
+
+body .modal .subComplete .message i {
+  padding: 0.3em;
+  color: #86ABA1;
+}
+
+body .modal .subComplete .message .note {
+  font-size: 2em;
+}
+
+@media (min-width: 1280px) {
+  body {
+    /* Submission Complete / modal pop-up */
+  }
+  body .containerFeedback {
+    width: 50%;
+    /* Feedback form */
+  }
+  body .containerFeedback h1 {
+    font-size: 2em;
+  }
+  body .containerFeedback p {
+    font-size: 1em;
+  }
+  body .containerFeedback form {
+    width: 60%;
+  }
+  body .containerFeedback form div {
+    padding-bottom: 2em;
+  }
+  body .containerFeedback form .subBtn {
+    padding: 0.5em;
+    margin: 1em;
+    width: 25vw;
+    font-size: 1.5em;
+    border: none;
+  }
+  body .modal .subComplete {
+    width: 50%;
+    height: 60vh;
+    padding-top: 2em;
+  }
+  body .modal .subComplete .close {
+    font-size: 2em;
+  }
+  body .modal .subComplete .message p {
+    font-size: 2.5em;
+  }
+  body .modal .subComplete .message i {
+    padding: 0.8em;
+  }
+  body .modal .subComplete .message .note {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    /* Submission Complete / modal pop-up */
+  }
+  body .containerFeedback {
+    width: 70%;
+    padding: 3em 0;
+    /* Feedback form */
+  }
+  body .containerFeedback h1 {
+    font-size: 1em;
+  }
+  body .containerFeedback p {
+    font-size: 0.8em;
+  }
+  body .containerFeedback form {
+    width: 60%;
+  }
+  body .containerFeedback form div {
+    padding-bottom: 2em;
+  }
+  body .containerFeedback form .subBtn {
+    padding: 0.5em;
+    margin: 1em;
+    width: 25vw;
+    font-size: 1.5em;
+    border: none;
+  }
+  body .modal .subComplete {
+    width: 60%;
+    height: 50vh;
+    padding: 4em 0;
+  }
+  body .modal .subComplete .close {
+    font-size: 2em;
+  }
+  body .modal .subComplete .message p {
+    font-size: 2em;
+  }
+  body .modal .subComplete .message i {
+    padding: 0.8em;
+  }
+  body .modal .subComplete .message .note {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    /* Submission Complete / modal pop-up */
+  }
+  body .containerFeedback {
+    width: 80%;
+    padding: 3em 0;
+    /* Feedback form */
+  }
+  body .containerFeedback h1 {
+    font-size: 1.5em;
+  }
+  body .containerFeedback p {
+    font-size: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  body .containerFeedback form {
+    width: 100%;
+  }
+  body .containerFeedback form div {
+    padding-bottom: 2em;
+  }
+  body .containerFeedback form div input {
+    height: 3vh;
+  }
+  body .containerFeedback form div textarea {
+    height: 5vh;
+  }
+  body .containerFeedback form .subBtn {
+    padding: 0.3em;
+    margin: 0.7em;
+    width: 40vw;
+    font-size: 1em;
+  }
+  body .modal .subComplete {
+    width: 80%;
+    height: 50vh;
+    padding: 3em 0;
+  }
+  body .modal .subComplete .close {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message p {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message i {
+    padding: 0.8em;
+  }
+  body .modal .subComplete .message .note {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    /* Submission Complete / modal pop-up */
+  }
+  body .containerFeedback {
+    width: 80%;
+    padding: 3em 0;
+    /* Feedback form */
+  }
+  body .containerFeedback h1 {
+    font-size: 1.5em;
+  }
+  body .containerFeedback p {
+    font-size: 0.8em;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  body .containerFeedback form {
+    width: 100%;
+  }
+  body .containerFeedback form div {
+    padding-bottom: 2em;
+  }
+  body .containerFeedback form div input {
+    height: 3vh;
+  }
+  body .containerFeedback form div textarea {
+    height: 3vh;
+  }
+  body .containerFeedback form .subBtn {
+    padding: 0.3em;
+    margin: 0.7em;
+    width: 40vw;
+    font-size: 1em;
+  }
+  body .modal .subComplete {
+    width: 80%;
+    height: 60vh;
+    padding: 5em 0;
+  }
+  body .modal .subComplete .close {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message p {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message i {
+    padding: 0.8em;
+  }
+  body .modal .subComplete .message .note {
+    font-size: 1em;
+  }
+}
+
+@media (max-height: 415px) {
+  body {
+    /* Submission Complete / modal pop-up */
+  }
+  body .containerFeedback {
+    width: 80%;
+    padding: 0.7em 0;
+    height: 80vh;
+    position: relative;
+    /* Feedback form */
+  }
+  body .containerFeedback h1 {
+    font-size: 1em;
+  }
+  body .containerFeedback p {
+    font-size: 0.5em;
+    text-align: center;
+  }
+  body .containerFeedback form {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 5%;
+  }
+  body .containerFeedback form div {
+    padding-bottom: 1em;
+  }
+  body .containerFeedback form div input {
+    height: 4vh;
+  }
+  body .containerFeedback form div textarea {
+    height: 4vh;
+  }
+  body .containerFeedback form .subBtn {
+    padding: 0.3em;
+    margin: 0.8em;
+    width: 40vw;
+    font-size: 1em;
+  }
+  body .modal .subComplete {
+    width: 70%;
+    height: 70vh;
+    padding: 0.5em 0;
+  }
+  body .modal .subComplete .close {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message p {
+    font-size: 1.5em;
+  }
+  body .modal .subComplete .message i {
+    padding: 0.8em;
+  }
+  body .modal .subComplete .message .note {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=feedback.css.map */

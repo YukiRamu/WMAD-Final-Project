@@ -1,0 +1,17 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+@import "./variables";
+@import "./header";
+@import "./footer";
+
+* {
+  font-family: Roboto Mono, monospace;
+  //font-family: 'Abel', sans-serif;
+  color: $textColor2;
+}
+a {
+  color: $seventh;
+  &:hover {
+    font-weight: bold;
+    color: $fifth;
+  }
+}

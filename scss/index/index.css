@@ -1,0 +1,582 @@
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  /* Title */
+}
+
+header .sideBar {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .sideBar a {
+  display: block;
+  padding: 0.7em;
+  font-size: 1.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+header .sideBar a i {
+  padding-right: 0.5em;
+  color: white;
+}
+
+header .sideBar a .fa-info {
+  padding-right: 1em;
+  color: white;
+}
+
+header .openBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+header .titleHeader {
+  margin-left: 0;
+  font-size: 3em;
+}
+
+header .titleHeader img {
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  width: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header div .sideBar a {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 2.5em;
+  }
+  header .titleHeader img {
+    position: relative;
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+            box-shadow: 0.7em 1em 1em #2C061F;
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1.5em;
+  }
+  header .titleHeader {
+    font-size: 2em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  header div .sideBar a {
+    font-size: 0.8em;
+  }
+  header div .openBtn .fa-bars {
+    font-size: 1em;
+  }
+  header .titleHeader {
+    font-size: 1.5em;
+  }
+  header .titleHeader img {
+    width: 1.3em;
+    height: 1.3em;
+  }
+}
+
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* Yuki Matsubara Morning Class Final Project: Online Travel Magazine  */
+/* flexbox */
+/* grid */
+/* logo */
+/* colors */
+/* Devices*/
+/* Footer */
+footer {
+  padding-bottom: 3em;
+  /* Move to top button*/
+}
+
+footer img {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-shadow: 0.6em 0.6em 0.6em #393e46;
+          box-shadow: 0.6em 0.6em 0.6em #393e46;
+  margin-bottom: 3em;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a:hover {
+  font-size: larger;
+}
+
+footer div .fa-twitter {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: dodgerblue;
+}
+
+footer div .fa-facebook {
+  color: blue;
+}
+
+footer div .fa-instagram {
+  color: #b46262;
+}
+
+footer .fa-chevron-circle-up {
+  position: absolute;
+  right: 0;
+  padding-bottom: 1em;
+  cursor: pointer;
+  color: #353f55;
+}
+
+footer .fa-chevron-circle-up:hover {
+  color: #ffac2f;
+}
+
+/* ============ Media Queries ============ */
+/* for large desktop*/
+@media (min-width: 1280px) {
+  footer div a {
+    font-size: 1.5em;
+  }
+}
+
+/* from large laptop to normal desktop*/
+/* from tablet to smaller laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footerImg {
+    height: 30vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from mobile to tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  footer div a {
+    font-size: 0.7em;
+  }
+  footer div .fa-twitter {
+    font-size: 1em;
+  }
+  footer div .fa-facebook {
+    font-size: 1em;
+  }
+  footer div .fa-instagram {
+    font-size: 1em;
+  }
+  footer .footerImg {
+    height: 20vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+  }
+}
+
+/* from smaller mobile */
+@media (max-width: 480px) {
+  footer div a {
+    font-size: 0.5em;
+  }
+  footer div .fa-twitter {
+    font-size: 0.5em;
+  }
+  footer div .fa-facebook {
+    font-size: 0.5em;
+  }
+  footer div .fa-instagram {
+    font-size: 0.5em;
+  }
+  footer .footerImg {
+    height: 15vh;
+  }
+  footer .fa-chevron-circle-up {
+    font-size: 1em;
+    padding-top: 0.5em;
+  }
+}
+
+/* Landscape */
+@media (max-height: 415px) {
+  footer .footerImg {
+    height: 40vh;
+  }
+}
+
+.containerWeb {
+  background-image: url("../../img/landscape7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden;
+  /* ============ Media Queries ============ */
+  /* for large desktop*/
+  /* from large laptop to normal desktop*/
+  /* from tablet to smaller laptop*/
+  /* from mobile to tablet */
+  /* from smaller mobile */
+  /* Landscape */
+  /* Portrait */
+}
+
+.containerWeb nav {
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerWeb nav img {
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+          clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  -webkit-box-shadow: 0.7em 1em 1em #2C061F;
+          box-shadow: 0.7em 1em 1em #2C061F;
+  width: 5em;
+  left: 5%;
+}
+
+.containerWeb nav ul {
+  position: relative;
+  right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2em;
+}
+
+.containerWeb nav ul li {
+  list-style: none;
+  padding: 1em;
+}
+
+.containerWeb nav ul li a {
+  color: #EAE3EA;
+  font-size: 2em;
+}
+
+.containerWeb nav ul li a:hover {
+  color: #353f55;
+  font-weight: bold;
+}
+
+.containerWeb h1.title {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 1%;
+}
+
+.containerWeb h1.title span {
+  opacity: 0;
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  color: #EAE3EA;
+}
+
+.containerWeb h1.title span.fade {
+  opacity: 1;
+}
+
+.containerWeb .userSelection {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerWeb .userSelection select {
+  width: 30vw;
+  height: 3em;
+  border-radius: 10%;
+  font-size: 1.5em;
+  opacity: 0.7;
+  color: #b46262;
+  font-weight: bold;
+  border: #ffac2f 0.3em solid;
+  cursor: pointer;
+  background: #EAE3EA;
+}
+
+.containerWeb .userSelection select:hover {
+  color: #353f55;
+}
+
+.containerWeb .userSelection p {
+  font-size: 8em;
+  font-weight: bold;
+  color: #EAE3EA;
+}
+
+.containerWeb button {
+  border: none;
+  background: none;
+  position: relative;
+  left: 50%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transform: translate(-300%, 0);
+          transform: translate(-300%, 0);
+}
+
+.containerWeb button .fa-plane {
+  color: #EAE3EA;
+}
+
+.containerWeb button .fa-plane:hover {
+  color: #353f55;
+}
+
+.containerWeb button span {
+  font-size: 3.5em;
+  color: #EAE3EA;
+}
+
+.containerWeb .show {
+  opacity: 1;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+@media (min-width: 1280px) {
+  .containerWeb nav {
+    padding-top: 10vh;
+  }
+  .containerWeb h1.title {
+    font-size: 5em;
+    margin: 3%;
+  }
+  .containerWeb .userSelection select {
+    font-size: 2em;
+  }
+  .containerWeb button span {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerWeb nav {
+    padding-top: 4vh;
+  }
+  .containerWeb nav img {
+    width: 4em;
+  }
+  .containerWeb nav ul li a {
+    font-size: 1.5em;
+  }
+  .containerWeb h1.title {
+    font-size: 3em;
+    margin: 3%;
+  }
+  .containerWeb .userSelection select {
+    font-size: 1em;
+  }
+  .containerWeb .userSelection p {
+    font-size: 6em;
+  }
+  .containerWeb button span {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .containerWeb nav img {
+    width: 3em;
+  }
+  .containerWeb nav ul li a {
+    font-size: 1em;
+  }
+  .containerWeb h1.title {
+    font-size: 2em;
+    margin: 3%;
+  }
+  .containerWeb .userSelection select {
+    font-size: 0.5em;
+  }
+  .containerWeb .userSelection p {
+    font-size: 5em;
+  }
+  .containerWeb button span {
+    font-size: 1.5em;
+  }
+  .containerWeb button i {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerWeb nav img {
+    display: block;
+    left: 0;
+    margin: auto;
+  }
+  .containerWeb nav ul {
+    position: fixed;
+    padding-left: 0;
+    padding-right: 0;
+    left: 0;
+    margin-left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .containerWeb nav ul li a {
+    font-size: 1em;
+  }
+  .containerWeb h1.title {
+    font-size: 2em;
+    margin: 3%;
+  }
+  .containerWeb .userSelection select {
+    font-size: 1em;
+    width: 50vw;
+  }
+  .containerWeb .userSelection p {
+    font-size: 3em;
+  }
+  .containerWeb button span {
+    font-size: 1.5em;
+  }
+  .containerWeb button i {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-height: 376px) {
+  .containerWeb h1.title {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+}
+
+@media (orientation: portrait) {
+  .containerWeb h1.title {
+    padding-top: 5%;
+  }
+  .containerWeb .userSelection {
+    display: block;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  .containerWeb .userSelection select {
+    width: 50vw;
+  }
+  .containerWeb button span {
+    display: block;
+    margin-bottom: 2em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

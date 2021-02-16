@@ -1,0 +1,113 @@
+<!--Yuki Matsubara Morning Class Final Project: Online Travel Magazine -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explore Your Destination</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Permanent+Marker&family=Roboto+Mono:ital,wght@1,300&family=Rock+Salt&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
+    <!--Links to external css-->
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="scss/style.css">
+    <link type="text/css" rel="stylesheet" href="scss/Explore/explore1.css">    
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="containerExplore">
+      <!--header-->
+      <header>
+        <!--hidden side bar-->
+        <div>
+          <nav id="sideBar" class="sideBar">
+            <a href="" class="closeBtn" onclick="closeNav()"><i class="fas fa-times fa-2x"></i></a>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="#"><i class="far fa-image"></i>Gallery</a>
+            <a href="#"><i class="fas fa-info"></i>Trip Info</a>
+          </nav>
+          <!--menu button-->
+          <button class="openBtn" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></button>
+        </div>
+        <!--title-->
+        <h1 class="titleHeader"><img class="logo" src="./img/logo.jpg" alt="logo">Europe x <span id="theme"></span></h1>  
+      </header>
+      <!--main-->
+      <main>
+        <p>Iconic cities, stunning landscapes, a mixture of cultures—there's so much to experience across this incredible continent. With our Europe tour packages, you can see it all on a sweeping journey across the continent, or get an in-depth look at a certain country that interests you.</p>
+        <p>Coming face-to-face with the ancient wonders of Rome, sailing across bluer-than-blue water on a Greek island-hopping adventure, or catching a traditional French cabaret show in Paris – Europe is the OG for diverse culture, A-MAZING food, the totally weird and the completely wonderful!</p>
+        <div class="grid">
+            <!--Image 1-->
+            <img class="imgOne slideLeft slideConts" src="./img/europe1.jpg" alt="europe1">
+            <div class="content1">
+              <h2>Get Inspired</h2>
+              <a href="./articleList1.html" target="_blank">Read More</a>
+            </div>
+            <!--Image 2-->
+            <img class="imgTwo slideRight slideConts" src="./img/europe7.jpg" alt="europe7">
+            <div class="content2">
+              <h2>Art / Museum / Design</h2>
+              <a href="#" target="_blank">Read More</a>
+            </div>
+            <!--Image 3-->
+            <img class="imgThree slideLeft slideConts" src="./img/europe6.jpg" alt="europe6">
+            <div class="content3">
+              <h2>Experience Adventure</h2>
+              <a href="#" target="_blank">Read More</a>
+            </div>
+            <!--Image 4-->
+            <img class="imgFour slideRight slideConts" src="./img/europe8.jpg" alt="europe8">
+            <div class="content4">
+              <h2>Get Yourself Ready and Escape</h2>
+              <a href="#" target="_blank">Read More</a>
+            </div>
+        </div>
+      </main>
+      <img class="bottomImg" src="./img/europe3.jpg" alt="europe3">
+      <!--subscribe-->
+      <section class="subscribe">
+        <h2>Get in Touch With Us</h2>
+        <p>Sign up to receive news and updates.<i class="far fa-smile"></i></p>
+        <form>
+          <input id ="emailInput" class="emailInput" type="email" placeholder="Email Address">
+          <input id="subButton" class="subButton" type="submit" value="Subscribe">
+        </form>
+      </section>
+      <!--submission complete / modal pop-up / hidden by default-->
+      <section id="PopUp" class="modal">
+        <div id="comp" class="subComplete">
+          <input type="button" class="close" id="closeBtn" value="x">
+          <div class="message">
+            <p>Thank you for subscribing us!</p>
+            <i class="far fa-check-circle fa-5x"></i>
+            <p class="note">A confirmation has been sent to your email.</p>
+          </div>
+        </div>
+      </section>
+       <!--footer-->
+      <footer>
+        <img class="footerImg" src="./img/europe4.jpg" alt="europe4">
+        <div>
+          <a href="#">ABOUT</a>
+          <a href="#">CONTRIBUTORS</a>
+          <a href="#">PRIVACY POLICY</a>
+          <a href="feedback.html" target="_blank">CONTACT US</a>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+        <!--Move to top button-->
+        <a id="toTop" href="#"><i class="fas fa-chevron-circle-up fa-3x"></i></a>     
+      </footer>
+    </div>
+     <!-- JavaScript -->
+     <script  type="text/javascript" src="js/explore.js"></script>
+     <script  type="text/javascript" src="js/header.js"></script>
+     <script  type="text/javascript" src="js/footer.js"></script>
+  </body>
+  </html>
