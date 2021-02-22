@@ -2,6 +2,9 @@
 Objective: We have learned how to use HTML, CSS, SASS and JavaScript to create websites that
 are beautiful, responsive and dynamic. In this final task, our goal is to put these skills into use to
 create a website that we can show as part of our portfolio.
+
+Website Image:
+
 ![image](https://user-images.githubusercontent.com/76931326/108681250-ca73a580-74a3-11eb-9b19-8b6872aa6f1a.png)
 
 1) Read quality resources to get an idea about what should you include in your portfolio
